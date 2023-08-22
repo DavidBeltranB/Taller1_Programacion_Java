@@ -1,0 +1,27 @@
+import java.util.Scanner;
+  public static void main(String[] args) {
+   
+    Scanner scanner = new Scanner(System.in);
+    
+    System.out.print("Digite el Año ");
+    int año = scanner.nextInt();
+    
+    if (año % 4 == 0) {
+      if (año % 100 == 0) {
+        if (año % 400 == 0) {
+          System.out.println(año + " es bisiesto");
+        } else {
+          System.out.println(año + " no es bisiesto"); 
+        }
+      } else {
+        System.out.println(año + " es bisiesto");
+      }
+    } else {
+      System.out.println(año + " no es bisiesto");
+    }
+    
+    scanner.close();
+  }
+}
+
+ 
