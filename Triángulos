@@ -1,0 +1,25 @@
+import java.util.Scanner;
+  public static void main(String[] args) {
+
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.print("Digite Lado a ");
+    double a = scanner.nextDouble();
+
+    System.out.print("Digite Lado b ");
+    double b = scanner.nextDouble();
+
+    System.out.print("Digite Lado c ");
+    double c = scanner.nextDouble();
+
+    if (a + b <= c || a + c <= b || b + c <= a) {
+      System.out.println("No es un triangulo valido");
+    } else if (a == b && b == c) {
+      System.out.println("El triangulo es equilatero"); 
+    } else if (a == b || b == c || a == c) {
+      System.out.println("El triangulo es isoceles");
+    } else {
+      System.out.println("El triangulo es escaleno");
+    }
+
+  }
