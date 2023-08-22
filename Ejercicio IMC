@@ -1,2 +1,30 @@
 import java.util.Scanner;
-//*Hola prueba
+
+public class Imc {
+
+  public static void main(String[] args) {
+
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.print("Estatura (m): ");
+    double estatura = scanner.nextDouble();
+
+    System.out.print("Peso (kg): ");
+    double peso = scanner.nextDouble();
+
+    System.out.print("Edad (años): ");
+    int edad = scanner.nextInt();
+
+    double imc = peso / (estatura * estatura);
+
+    if (edad < 45 && imc < 22.0) {
+      System.out.println("Riesgo bajo");
+    } else if (edad >= 45 && imc < 22.0) {
+      System.out.println("Riesgo medio");
+    } else {
+      System.out.println("Riesgo alto");
+    }
+
+  }
+
+}
