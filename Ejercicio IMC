@@ -1,18 +1,16 @@
 import java.util.Scanner;
 
-public class Imc {
-
   public static void main(String[] args) {
 
     Scanner scanner = new Scanner(System.in);
 
-    System.out.print("Estatura (m): ");
+    System.out.print("Escribe tu Estatura en metros ");
     double estatura = scanner.nextDouble();
 
-    System.out.print("Peso (kg): ");
+    System.out.print("Escribe tu peso kg ");
     double peso = scanner.nextDouble();
 
-    System.out.print("Edad (años): ");
+    System.out.print("Escribe tu edad ");
     int edad = scanner.nextInt();
 
     double imc = peso / (estatura * estatura);
@@ -26,5 +24,3 @@ public class Imc {
     }
 
   }
-
-}
