@@ -1,0 +1,19 @@
+impor java.util.Scanner;  
+public static void main(String[] args) {
+
+    Scanner scanner = new Scanner(System.in);
+    
+    System.out.print("Digita un Caracter ");
+    char c = scanner.next().charAt(0);
+    
+    if (c >= '0' && c <= '9') {
+      System.out.println("Es numero");
+    } else if (c >= 'A' && c <= 'Z') {
+      System.out.println("Es letra mayuscula");
+    } else if (c >= 'a' && c <= 'z') {
+      System.out.println("Es letra minuscula");
+    } else {
+      System.out.println("No es letra ni numero");
+    }
+
+  }
